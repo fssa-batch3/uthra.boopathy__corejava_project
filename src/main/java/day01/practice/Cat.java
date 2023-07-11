@@ -1,4 +1,4 @@
-package corejava_demoproject.day01.practice;
+package day01.practice;
 
 public class Cat {
     // Attributes

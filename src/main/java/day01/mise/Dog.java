@@ -1,4 +1,4 @@
-package corejava_demoproject.day01.mise;
+package day01.mise;
 
 public class Dog {
     // Attributes

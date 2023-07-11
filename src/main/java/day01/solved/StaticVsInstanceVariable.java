@@ -1,4 +1,4 @@
-package corejava_demoproject.day01.solved;
+package day01.solved;
 
 public class StaticVsInstanceVariable {
    
