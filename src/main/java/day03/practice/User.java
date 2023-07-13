@@ -47,9 +47,9 @@ public class User {
 		
 		User user1 = new User("Uthra", "Uthra@12", "uthra@gmail.com");
 		
-		System.out.println("Email :" + user.getEmail() + " Name :" + user.getName());
+		System.out.println("Email:" + user.getEmail() + " Name:" + user.getName());
 		
-		System.out.println("Name: " + user1.getName() + " Password: " + user1.getPassword() + "Email: " + user1.getEmail());
+		System.out.println("Name:" + user1.getName() + " Password:" + user1.getPassword() + "Email:" + user1.getEmail());
 		
 	}
 
