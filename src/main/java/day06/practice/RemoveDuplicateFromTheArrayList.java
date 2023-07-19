@@ -28,6 +28,19 @@ public class RemoveDuplicateFromTheArrayList {
 	System.out.println(listWithoutDuplicates);
 	
 	}
+	
+	 List<String> uniqueCityList = new ArrayList<>();
+     // Loop through the original cityList
+     for (String cit : cityList) {
+         // If uniqueCityList doesn't contain the city, add it to the list
+         if (!uniqueCityList.contains(cit)) {
+             uniqueCityList.add(cit);
+         }
+     }
+     // Print the unique city names
+     for (String cit : uniqueCityList) {
+         System.out.println(cit);
+     }
 
 	
 }
