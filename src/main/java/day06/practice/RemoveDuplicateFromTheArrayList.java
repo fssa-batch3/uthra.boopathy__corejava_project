@@ -14,33 +14,38 @@ public class RemoveDuplicateFromTheArrayList {
 	cityList.add("Mumbai");
 	
 	
-	 /////   METHOD  I
+//	 /////   METHOD  I
+//	
+//	Set<String> set = new HashSet<>(cityList.size());
+//	cityList.removeIf(p -> !set.add(p));
+//	
+//	System.out.println(cityList);
+//	
+//	/////  METHOD II
+//	
+//	List<String> listWithoutDuplicates = cityList.stream().distinct().collect(Collectors.toList());
+//
+//	System.out.println(listWithoutDuplicates);
+//	
 	
-	Set<String> set = new HashSet<>(cityList.size());
-	cityList.removeIf(p -> !set.add(p));
 	
-	System.out.println(cityList);
-	
-	/////  METHOD II
-	
-	List<String> listWithoutDuplicates = cityList.stream().distinct().collect(Collectors.toList());
+//	 List<String> uniqueCityList = new ArrayList<>();
+//     // Loop through the original cityList
+//     for (String cit : cityList) {
+//         // If uniqueCityList doesn't contain the city, add it to the list
+//         if (!uniqueCityList.contains(cit)) {
+//             uniqueCityList.add(cit);
+//         }
+//     }
+//     // Print the unique city names
+//     for (String cit : uniqueCityList) {
+//         System.out.println(cit);
+//     }
+//
+//	
 
-	System.out.println(listWithoutDuplicates);
 	
 	}
 	
-	 List<String> uniqueCityList = new ArrayList<>();
-     // Loop through the original cityList
-     for (String cit : cityList) {
-         // If uniqueCityList doesn't contain the city, add it to the list
-         if (!uniqueCityList.contains(cit)) {
-             uniqueCityList.add(cit);
-         }
-     }
-     // Print the unique city names
-     for (String cit : uniqueCityList) {
-         System.out.println(cit);
-     }
 
-	
 }

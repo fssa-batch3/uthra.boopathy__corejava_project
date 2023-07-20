@@ -1,22 +1,29 @@
 package day07.practice;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeParseException;
+
 public class Task {
 	private int id;
 	private String name;
-	private String deadline;
+	private LocalDate deadline;
 	
 	public String getName() {
 		return name;
 	}
 
-	public String getDeadline() {
+	public LocalDate getDeadline() {
 		return deadline;
 	}
 	
 	public Task (String name, String deadLine) {
 		
 		this.name = name;
-		this.deadline = deadLine;
+		try {
+            this.deadline = LocalDate.parse(deadLine);
+        } catch (DateTimeParseException e) {
+            System.out.println("Error: Invalid deadline format. Please use the format 'YYYY-MM-DD'");
+        }
 	}
 	
 	 @Override
