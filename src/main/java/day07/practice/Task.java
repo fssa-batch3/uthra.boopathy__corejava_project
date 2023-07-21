@@ -16,6 +16,10 @@ public class Task {
 		return deadline;
 	}
 	
+	public Task(String name) {
+		this.name = name;
+	}
+	
 	public Task (String name, String deadLine) {
 		
 		this.name = name;

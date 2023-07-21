@@ -48,18 +48,18 @@ public class Task implements Comparable<Task>{
 	@Override
 	public int compareTo(Task t) {
 
-//		if (this.getPriority() == t.getPriority()) {
-//			return 0;
-//		} else {
-//			if (this.deadLine.isBefore(getDeadline())) {
-//				return 1;
-//			} else {
-//				return -1;
-//			}
-//			
-//		}
+		if (this.getPriority() == t.getPriority()) {
+			return 0;
+		} else {
+			if (this.deadLine.isAfter(getDeadline())) {
+				return 1;
+			} else {
+				return -1;
+			}
+			
+		}
 		
-		return this.deadLine.compareTo(t.getDeadline());
+		//return this.deadLine.compareTo(t.getDeadline());
 	}
 
 	@Override
